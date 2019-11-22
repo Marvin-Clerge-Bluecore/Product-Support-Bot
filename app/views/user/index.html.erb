@@ -1,5 +1,8 @@
 <%= stylesheet_link_tag "master.css" %>
 
+<% if @users && @users.length > 0 %>
+
+
 <div class='app_container'>
   <div class='app'>
     <div class='title'><h1>Round Robin</h1></div>
@@ -41,8 +44,11 @@
   </div>
 </div>
 
-<div></div>
+<% else %>
 
+<div>No users</div>
+
+<% end %>
 
 
 
